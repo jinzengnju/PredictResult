@@ -133,16 +133,17 @@ class PreProcess:
         return vocab_dict
 
 
-model, sess, lda, dictionary, vocab_dict = build_graph()
+
 def predict_oneText(str):
     res=predict(model, sess, str, dictionary, lda, vocab_dict)
     return res
-
+model, sess, lda, dictionary, vocab_dict = build_graph()
 if __name__=='__main__':
     all_res=[]
     fin=open("/home/jin/graduate/data/graduate/test_normal.json",'r',encoding='utf8')
     line=fin.readline()
     while line:
+        print("下一个*************************")
         one_text={}
         d=json.loads(line)
         message=d['fact']
