@@ -10,10 +10,9 @@
 from gensim.models import LdaModel
 from gensim.corpora import Dictionary
 import tensorflow as tf
-from ResultPredict.data_utils import *
-from ResultPredict.model import Model
+from data_utils import *
+from model import Model
 import json
-import os
 import yaml
 from gensim.models import Word2Vec
 
@@ -104,8 +103,7 @@ def predict(model,sess,message,dictionary,lda,vocab_dict):
 
 class TrainConfig:
     def __init__(self):
-        path=os.path.abspath('.')
-        f = open(os.path.join(path,'config.yaml'), encoding='utf-8')
+        f = open("/home/jin/graduate/predict/PredictResult/ResultPredict/config.yaml",encoding='utf-8')
         self.configs_dict = yaml.load(f)
     def get(self,name):
         return self.configs_dict.get(name)
