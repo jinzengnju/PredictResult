@@ -6,7 +6,7 @@ import re
 from ResultPredict.get_stopwords import stopwords
 
 def init():
-    f = open("D:/WorkFile/lawRecommend/MyGraduate/Model/law.txt", 'r', encoding='utf8')
+    f = open("/home/jin/graduate/law.txt", 'r', encoding='utf8')
     law = {}
     lawname = {}
     line = f.readline()

@@ -1,8 +1,8 @@
-ckpt_dir: D:\graduate\checkpoints
-vocab_dict: D:\graduate\dictionary\vocab.dict
-w2v_model: D:\graduate\word2vec\w2v_model
-lda_model: D:\graduate\LDA\model
-lda_vocab: D:\graduate\LDA\dict
+ckpt_dir: /home/jin/graduate/checkpoints
+vocab_dict: /home/jin/graduate/data/graduate/vocab.dict
+w2v_model: /home/jin/graduate/word2vec/graduate/w2v_model
+lda_model: /home/jin/graduate/LDA/graduate/model
+lda_vocab: /home/jin/graduate/LDA/graduate/dict
 num_classes: 263
 max_gradient_norm: 5.0
 batch_size: 1

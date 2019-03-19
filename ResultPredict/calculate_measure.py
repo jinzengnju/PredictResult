@@ -2,7 +2,7 @@
 # -*- coding:UTF-8 -*-
 import json
 def calculate():
-    fin=open("result.json",'r',encoding='utf8')
+    fin=open("/home/jin/graduate/predict/result.json",'r',encoding='utf8')
     line=fin.readline()
     CoverLaw=0
     OwnLaw=0

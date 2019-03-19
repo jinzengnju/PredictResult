@@ -141,7 +141,7 @@ def predict_oneText(str):
 
 if __name__=='__main__':
     all_res=[]
-    fin=open("D:/fengyi/normalData/test_normal.json",'r',encoding='utf8')
+    fin=open("/home/jin/graduate/data/graduate/test_normal.json",'r',encoding='utf8')
     line=fin.readline()
     while line:
         one_text={}
@@ -153,7 +153,7 @@ if __name__=='__main__':
         all_res.append(one_text)
         line=fin.readline()
     fin.close()
-    fout=open("result.json",'w',encoding='utf8')
+    fout=open("/home/jin/graduate/predict/result.json",'w',encoding='utf8')
     for e in all_res:
         json.dump(e,fout,ensure_ascii=False)
         fout.write("\n")

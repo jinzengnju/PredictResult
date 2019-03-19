@@ -2,7 +2,7 @@
 # -*- coding:UTF-8 -*-
 def get_stopwords():
     print("加载停用词...............")
-    fin=open("D:/fengyi/normalData/stopwords.txt",'r',encoding='utf8')
+    fin=open("/home/jin/graduate/stopwords.txt",'r',encoding='utf8')
     stopwords_temp=[]
     line=fin.readline()
     while line:
