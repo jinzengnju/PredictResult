@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
 import tensorflow as tf
-from ResultPredict.attention import attention
+from attention import attention
 
 class Model(object):
     def rnn_cell(self,FLAGS,dropout):

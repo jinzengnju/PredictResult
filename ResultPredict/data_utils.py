@@ -3,7 +3,7 @@
 import numpy as np
 import jieba
 import re
-from ResultPredict.get_stopwords import stopwords
+from get_stopwords import stopwords
 
 def init():
     f = open("/home/jin/graduate/law.txt", 'r', encoding='utf8')

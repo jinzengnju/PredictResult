@@ -12,6 +12,7 @@ from gensim.corpora import Dictionary
 import tensorflow as tf
 from data_utils import *
 from model import Model
+from get_stopwords import stopwords
 import json
 import yaml
 from gensim.models import Word2Vec
